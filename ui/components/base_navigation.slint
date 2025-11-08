@@ -46,8 +46,8 @@ export component BaseNavigation {
             return;
         }
 
-        if index != root.current_item {
-            root.current_item = index;
+        if index != root.current_index {
+            root.current_index = index;
             root.selection_changed(index);
         }
     }

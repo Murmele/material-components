@@ -189,7 +189,7 @@ export component ModalNavigationDrawer inherits ModalDrawer {
         if root.groups.length > 0 {
             root.current_group = 0;
             if root.groups[current_group].items.length > 0 {
-                root.current_item = 0;
+                root.current_index = 0;
             }
         }
     }
@@ -216,7 +216,7 @@ export component ModalNavigationDrawer inherits ModalDrawer {
         }
 
         root.current_group = group_index;
-        root.current_item = item_index;
+        root.current_index = item_index;
         root.selection_changed(group_index, item_index);
         root.close();
     }
